@@ -4,6 +4,5 @@ public class VariableDemo1 {
         // 数据类型 变量名 = 初始值;
         int i = 10;
         System.out.println(i);
-        
     }
 }

@@ -1,4 +1,3 @@
-
 // class 类, HelloWorld 类名
 // public 公共的, 修饰符, 用于修饰类, 方法, 变量
 // static 静态的, 修饰符, 用于修饰方法, 变量
