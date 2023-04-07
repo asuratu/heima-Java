@@ -44,12 +44,19 @@ public class SwitchDemo {
 
         // 优化
         switch (num) {
-            case 1 -> System.out.println("星期一");
+            case 1 -> {
+                System.out.println("一周开始了");
+                System.out.println("星期一");
+            }
             case 2 -> System.out.println("星期二");
             case 3 -> System.out.println("星期三");
             case 4 -> System.out.println("星期四");
             case 5 -> System.out.println("星期五");
-            case 6, 7 -> System.out.println("双休日"); // 合并
+            case 6, 7 -> {
+                // 合并
+                System.out.println("双休日");
+                System.out.println("一周结束了");
+            }
             default -> System.out.println("输入的数字不在 1-7 之间");
         }
 
