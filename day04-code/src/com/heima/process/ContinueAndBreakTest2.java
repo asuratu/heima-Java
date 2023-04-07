@@ -10,11 +10,18 @@ public class ContinueAndBreakTest2 {
         // 请输入一个大于等于2的整数
         System.out.println("请输入一个大于等于2的整数");
         Scanner sc = new Scanner(System.in);
-        if (!sc.hasNextInt() || sc.nextInt() < 2) {
-            System.out.println("输入的不是整数 或者 输入的整数小于2, 请重新输入。");
+        // 如果是整数，就接收, 如果不是整数，就报错
+        if (!sc.hasNextInt()) {
+            System.out.println("输入的不是整数, 请重新输入。");
             sc.next();
         }
         int num = sc.nextInt();
+        if (num < 2) {
+            System.out.println("输入的整数小于2, 请重新输入。");
+            sc.next();
+        }
+
+        System.out.println("num = " + num);
 
         int i = 2;
         while (i <= num) {
@@ -26,7 +33,6 @@ public class ContinueAndBreakTest2 {
                 break;
             }
             i++;
-            System.out.println("i = " + i);
         }
     }
 }
