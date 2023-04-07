@@ -2,7 +2,7 @@ public class VariableTest {
     public static void main(String[] args) {
         //一开始没有乘客。
         int count = 0;
-        //第一站：上去一位乘客
+        //第一站：上去一位乘客1
         count += 1;
         //第二站：上去两位乘客，下来一位乘客
         count += 2;
