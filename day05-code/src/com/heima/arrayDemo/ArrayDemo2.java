@@ -1,4 +1,4 @@
-package come.heima.arrayDemo;
+package com.heima.arrayDemo;
 
 public class ArrayDemo2 {
     public static void main(String[] args) {

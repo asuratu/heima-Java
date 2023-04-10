@@ -1,4 +1,4 @@
-package come.heima.arrayDemo;
+package com.heima.arrayDemo;
 
 import java.util.Arrays;
 
