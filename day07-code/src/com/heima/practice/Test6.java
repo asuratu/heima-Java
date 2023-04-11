@@ -45,5 +45,44 @@ public class Test6 {
 
         // 12. 输出结果
         System.out.println("加密后的数字为:" + newNum);
+
+        // 13. 解密
+        // 13.1 将数字转换为字符串
+        String str2 = String.valueOf(newNum);
+
+        // 13.2 将字符串转换为字符数组
+        char[] chs2 = str2.toCharArray();
+
+        // 13.3 遍历字符数组
+        for (int i = 0; i < chs2.length; i++) {
+            // 13.4 将字符转换为数字
+            int n = chs2[i] - '0';
+
+            // 如果数字小于5, 则加10
+            if (n < 5) {
+                n += 10;
+            }
+
+            // 13.5 将数字减5
+            n -= 5;
+            // 13.6 将数字转换为字符
+            chs2[i] = (char) (n + '0');
+        }
+
+        // 13.7 将字符数组反转
+        for (int i = 0; i < chs2.length / 2; i++) {
+            char temp = chs2[i];
+            chs2[i] = chs2[chs2.length - 1 - i];
+            chs2[chs2.length - 1 - i] = temp;
+        }
+
+        // 13.8 将字符数组转换为字符串
+        String newStr2 = new String(chs2);
+
+        // 13.9 将字符串转换为数字
+        int newNum2 = Integer.parseInt(newStr2);
+
+        // 13.10 输出结果
+        System.out.println("解密后的数字为:" + newNum2);
     }
 }
