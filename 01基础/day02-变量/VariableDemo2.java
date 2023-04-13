@@ -4,6 +4,10 @@ public class VariableDemo2 {
         // 整数类型
         // byte 1字节 -128~127
         byte b = 10;
+
+        // Q: golang 中的 byte 是什么类型?
+        // A: byte 是 uint8 的别名, 占用 1 个字节, 范围是 0~255
+        
         System.out.printf("byte:\t%d%n", b);
         // short 2字节 -32768~32767
         short s = 10;
