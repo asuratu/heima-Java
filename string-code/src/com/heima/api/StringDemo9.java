@@ -10,7 +10,7 @@ public class StringDemo9 {
         System.out.println(newPhone);
     }
 
-    private static String replacePhone(String phone) {
+    private static String replacePhone1(String phone) {
         StringBuilder s = new StringBuilder(phone);
         for (int i = 3; i < 7; i++) {
             s.setCharAt(i, '*');
@@ -18,5 +18,19 @@ public class StringDemo9 {
         return s.toString();
     }
 
+    private static String replacePhone2(String phone) {
+        StringBuilder s = new StringBuilder(phone);
+        s.replace(3, 7, "****");
+        return s.toString();
+    }
+
+    // 使用substring
+    private static String replacePhone(String phone) {
+        // q: substring 的用法
+        // a: substring(int beginIndex, int endIndex)
+        String s1 = phone.substring(0, 3);
+        String s2 = phone.substring(7);
+        return s1 + "****" + s2;
+    }
 
 }
