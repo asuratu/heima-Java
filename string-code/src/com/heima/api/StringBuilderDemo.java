@@ -18,5 +18,12 @@ public class StringBuilderDemo {
         // Java 底层对它做了一些特殊处理
         // 所以, StringBuilder 的对象打印的时候, 不是地址值, 而是字符串
         System.out.println(sb);
+
+        // 5. 长度
+        System.out.println(sb.length());
+
+        // 6. 删除
+        sb.delete(0, 3);
+        System.out.println(sb);
     }
 }
