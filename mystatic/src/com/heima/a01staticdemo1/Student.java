@@ -11,7 +11,7 @@ public class Student {
     // static 修饰的成员变量, 静态变量, 所有的对象共享一份数据
     // 一般用来存储对象的共性数据
     // 还可以使用 类名.静态变量 的方式访问 Student.teacherName
-    public static String teacherName;
+    public static String teacherName; // 静态变量, 推荐使用 类名.静态变量 的方式访问
     // 姓名 年龄 性别
     private String name;
     private String age;

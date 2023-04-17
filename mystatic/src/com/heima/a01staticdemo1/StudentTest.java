@@ -12,11 +12,11 @@ public class StudentTest {
 // 创建学生对象
         Student s1 = new Student("张三", "23", "男");
         // 给学生对象的老师属性赋值
-        s1.teacherName = "张老师";
+        Student.teacherName = "张老师";
         // 调用方法
         s1.study();
         s1.show();
-        
+
         System.out.println("---------------");
 
         Student s2 = new Student("李四", "24", "女");
