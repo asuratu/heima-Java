@@ -1,5 +1,8 @@
 package com.heima.demo;
 
+// q: idea 如何隐藏模块后面的path
+// a: 右键模块, 点击 Mark Directory as -> Excluded
+
 /**
  * @ClassName Animal
  * @Description com.heima.demo.Animal
