@@ -13,13 +13,17 @@ import static com.heima.api.StudentSystem.work;
  * @Version 1.0.0
  */
 public class Auth {
-    public static void main(String[] args) {
-        // 用户列表
-        ArrayList<User> userList = new ArrayList<>();
+    // 用户列表
+    static ArrayList<User> userList = new ArrayList<>();
 
+    // 静态代码块, 在类加载的时候执行
+    // 作用: 用来初始化类的数据
+    static {
         // 添加默认用户
         userList.add(new User("admin", "admin", "421124199209286019", "15021039435"));
+    }
 
+    public static void main(String[] args) {
         System.out.println("欢迎来到学生管理系统");
 
         loop:

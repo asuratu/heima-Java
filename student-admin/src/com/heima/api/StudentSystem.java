@@ -11,6 +11,16 @@ import java.util.Scanner;
  * @Version 1.0.0
  */
 public class StudentSystem {
+
+    // 定义常量
+    private static final String ADD_STUDENT = "1";
+    private static final String DELETE_STUDENT = "2";
+    private static final String UPDATE_STUDENT = "3";
+    private static final String GET_STUDENT = "4";
+    private static final String PRINT_STUDENT = "5";
+    private static final String EXIT = "6";
+
+
     public static void work() {
         // 1. 定义一个集合
         ArrayList<Student> list = new ArrayList<>();
@@ -31,27 +41,27 @@ public class StudentSystem {
             String line = sc.nextLine();
 
             switch (line) {
-                case "1" -> {
+                case ADD_STUDENT -> {
                     System.out.println("添加学生");
                     addStudent(list);
                 }
-                case "2" -> {
+                case DELETE_STUDENT -> {
                     System.out.println("删除学生");
                     deleteStudent(list);
                 }
-                case "3" -> {
+                case UPDATE_STUDENT -> {
                     System.out.println("修改学生");
                     updateStudent(list);
                 }
-                case "4" -> {
+                case GET_STUDENT -> {
                     System.out.println("查询学生");
                     getStudent(list);
                 }
-                case "5" -> {
+                case PRINT_STUDENT -> {
                     System.out.println("打印全部学生");
                     printStudentList(list);
                 }
-                case "6" -> {
+                case EXIT -> {
                     System.out.println("退出");
                     break loop; // 跳出指定的循环
                 }
