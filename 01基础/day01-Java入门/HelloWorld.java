@@ -18,6 +18,7 @@ public class HelloWorld {
 
 // JDK = JRE + 开发工具
 // JRE = JVM + 核心类库
+// JIT 是 Just In Time 的缩写，是即时编译器的意思。
 
 // JavaSE Java Standard Edition  Java标准版 用于桌面应用
 // JavaME Java Micro Edition  Java微型版 用于嵌入式设备, 手机
