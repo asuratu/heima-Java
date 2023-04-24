@@ -251,6 +251,11 @@ public class GameJFrame extends JFrame implements KeyListener {
 
         JMenuItem reloginItem = new JMenuItem("重新登录");
         JMenuItem exitItem = new JMenuItem("关闭游戏");
+        // 点击关闭游戏
+        exitItem.addActionListener(e -> {
+            // 关闭窗体
+            this.dispose();
+        });
         // 将菜单项添加到菜单中
         menu.add(changeImageItem);
         menu.add(restartItem);
