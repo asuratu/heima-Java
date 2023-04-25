@@ -40,6 +40,19 @@ public class demo1 {
         Runtime runtime = Runtime.getRuntime();
         // 获取当前系统的CPU核数
         System.out.println(runtime.availableProcessors());
+        // JVM 空闲的内存, 单位字节 byte
+        System.out.println(runtime.freeMemory() / 1024 / 1024);
+        // JVM 总共已经使用的内存, 单位字节 byte
+        System.out.println(runtime.totalMemory() / 1024 / 1024);
+        // JVM 最大的内存, 单位字节 byte
+        System.out.println(runtime.maxMemory() / 1024 / 1024);
+
+        // 运行 cmd 命令
+        try {
+            Process process = runtime.exec("cmd /c dir");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static String toDate(long time) {
