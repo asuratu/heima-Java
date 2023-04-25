@@ -7,15 +7,15 @@ public class VariableDemo2 {
 
         // Q: golang 中的 byte 是什么类型?
         // A: byte 是 uint8 的别名, 占用 1 个字节, 范围是 0~255
-        
+
         System.out.printf("byte:\t%d%n", b);
-        // short 2字节 -32768~32767
+        // short 2字节 -32768~32767 2^16
         short s = 10;
         System.out.printf("short:\t%d%n", s);
-        // int 4字节 -2147483648~2147483647
+        // int 4字节 -2147483648~2147483647 2^32
         int i = 10;
         System.out.printf("int:\t%d%n", i);
-        // long 8字节 -9223372036854775808~9223372036854775807
+        // long 8字节 -9223372036854775808~9223372036854775807 2^64
         long l = 10L; // L 表示后面的数字是long类型
         System.out.printf("long:\t%d%n", l);
         System.out.println("----------------------------");

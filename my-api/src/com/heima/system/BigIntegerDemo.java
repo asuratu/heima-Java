@@ -1,11 +1,11 @@
-package com.heima;
+package com.heima.system;
 
 import java.math.BigInteger;
 import java.util.Random;
 
 /**
  * @ClassName BigIntegerDemo
- * @Description com.heima.BigIntegerDemo
+ * @Description com.heima.system.BigIntegerDemo
  * @Author AsuraTu
  * @Date 2023/4/25 14:57
  * @Version 1.0.0

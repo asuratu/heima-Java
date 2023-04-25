@@ -1,10 +1,10 @@
-package com.heima;
+package com.heima.system;
 
 import java.math.BigInteger;
 
 /**
  * @ClassName BigIntegerDemo2
- * @Description com.heima.BigIntegerDemo2
+ * @Description com.heima.system.BigIntegerDemo2
  * @Author AsuraTu
  * @Date 2023/4/25 15:31
  * @Version 1.0.0
