@@ -52,7 +52,6 @@ public class A01_CollectionDemo1 {
         // 6. 获取集合的长度
         System.out.println(coll.size());
 
-
         System.out.println(coll);
 
     }
