@@ -8,5 +8,7 @@ package com.heima.mycollection;
  * @Version 1.0.0
  */
 public class A01_CollectionDemo1 {
-    
+    public static void main(String[] args) {
+        
+    }
 }
