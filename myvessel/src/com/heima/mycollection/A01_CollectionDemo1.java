@@ -54,6 +54,5 @@ public class A01_CollectionDemo1 {
 
         System.out.println(coll);
 
-        
     }
 }
