@@ -27,6 +27,7 @@ public class A05_GenericsDemo5 {
         ArrayList<Zi> list3 = new ArrayList<>();
 
         method(list1);
+        // public static void method(ArrayList<Ye> list) {
         // method(list2); // 报错, 因为泛型不具备继承性
         // method(list3);
 
@@ -51,7 +52,7 @@ public class A05_GenericsDemo5 {
     // 1. 如果定义类, 方法, 接口时, 无法确定类型, 可以使用泛型
     // 2. 如果类, 方法, 接口中的某个功能的参数, 或者返回值类型不确定, 可以使用泛型
     // 3. 如果类, 方法, 接口中的某个功能的参数, 或者返回值类型不确定, 但是需要对类型进行限定, 可以使用泛型的上限和下限
-    
+
     public static void method(ArrayList<? extends Ye> list) {
         // 遍历集合
         for (Object o : list) {
