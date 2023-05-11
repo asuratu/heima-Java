@@ -1,6 +1,6 @@
 package com.heima.test;
 
-// javabean 类, 用来描述事务的类
+// javabean 类, 用来描述事物的类
 public class Phone {
     // 属性
     String brand;
