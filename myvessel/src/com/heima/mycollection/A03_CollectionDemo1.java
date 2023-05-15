@@ -29,7 +29,7 @@ public class A03_CollectionDemo1 {
         // Iterator<E>接口的常用方法
         // boolean hasNext(): 如果仍有元素可以迭代，则返回 true。
         // E next(): 返回迭代的下一个元素。
-        // 注意点: Iterator<E>接口是有泛型的, 如果使用Iterator<E>接口接收, 那么迭代器中的泛型就是什么泛型
+        // 注意点: Iterator<E>接口是有 泛型的, 如果使用Iterator<E>接口接收, 那么迭代器中的泛型就是什么泛型
         Iterator<String> iterator = coll.iterator();
 
         // 2. 遍历集合
