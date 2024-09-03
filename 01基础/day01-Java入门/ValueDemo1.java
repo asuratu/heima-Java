@@ -1,8 +1,11 @@
 public class ValueDemo1 {
     public static void main(String[] args) {
         // 字符串类型
-        String str = "Hello World";
+        String str = "Hello World1";
         System.out.println(str);
+
+        String str2 = "Hello" + " " + "World2";
+        System.out.println(str2);
 
         // 字符类型
         char ch = 'a';
@@ -13,10 +16,11 @@ public class ValueDemo1 {
         short s = 20; // 2个字节
         int i = 30; // 4个字节
         long l = 40L;  // 8个字节
-        System.out.println(b);
-        System.out.println(s);
-        System.out.println(i);
-        System.out.println(l);
+//        System.out.println(b);
+//        System.out.println(s);
+//        System.out.println(i);
+//        System.out.println(l);
+        printElements(b, s, i, l);
 
         // 浮点类型
         float f = 3.14F;
@@ -42,10 +46,16 @@ public class ValueDemo1 {
         System.out.println(flag);
 
         // 空类型
-        // null 是一个关键字, 代表空, 只能赋值给引用类型
+        // null 是一个关键字, 代表空, 只能赋值给引用类型, 不能单独使用。
         String nullStr = null;
         System.out.println(nullStr);
 
     }
 
+    @SafeVarargs
+    public static <T> void printElements(T... elements) {
+        for (T element : elements) {
+            System.out.println(element);
+        }
+    }
 }
