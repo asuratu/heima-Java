@@ -8,6 +8,10 @@ package com.heima.demo;
  * @Version 1.0.0
  */
 public class Cat extends Animal {
+    public static void sleep() {
+        System.out.println("猫睡觉");
+    }
+
     public void catchMouse() {
         System.out.println("猫抓老鼠");
     }

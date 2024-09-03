@@ -11,6 +11,11 @@ package com.heima.demo;
  * @Version 1.0.0
  */
 public class Animal {
+    // 睡觉
+    public static void sleep() {
+        System.out.println("动物睡觉");
+    }
+
     // 吃法
     public void eat() {
         System.out.println("动物吃饭");

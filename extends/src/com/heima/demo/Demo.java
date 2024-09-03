@@ -45,6 +45,10 @@ public class Demo {
         teddyDog.guard();
         teddyDog.rub();
 
+        System.out.println("==========================");
 
+        // 猫的静态方法
+        Cat.sleep();
+        Animal.sleep();
     }
 }

@@ -20,9 +20,11 @@ public class A02_Test2 {
         // 1. 准备一个集合, 存储男生
         ArrayList<String> maleList = new ArrayList<>();
         Collections.addAll(maleList, "张三", "李四", "王五", "赵六", "田七");
+        Collections.shuffle(maleList);
         // 2. 准备一个集合, 存储女生
         ArrayList<String> femaleList = new ArrayList<>();
         Collections.addAll(femaleList, "小花", "小红", "小绿", "小蓝", "小紫");
+        Collections.shuffle(femaleList);
         // 3. 随机点名
         // flag 为 true 代表随机到男生, 为 false 代表随机到女生
 
@@ -32,20 +34,20 @@ public class A02_Test2 {
                 // 随机到男生
                 // 1. 判断男生集合是否为空
                 if (maleList.size() == 0) {
-                    System.out.println("男生已经点完了");
+//                    System.out.println("男生已经点完了");
                     continue;
                 }
-                // 2. 随机取出一个男生
+                // 2. 取出第一个男生
                 String name = maleList.remove(0);
                 System.out.println("随机到男生: " + name);
             } else {
                 // 随机到女生
                 // 1. 判断女生集合是否为空
                 if (femaleList.size() == 0) {
-                    System.out.println("女生已经点完了");
+//                    System.out.println("女生已经点完了");
                     continue;
                 }
-                // 2. 随机取出一个女生
+                // 2. 取出第一个女生
                 String name = femaleList.remove(0);
                 System.out.println("随机到女生: " + name);
             }
@@ -56,7 +58,6 @@ public class A02_Test2 {
                 break;
             }
         }
-
     }
 
 
