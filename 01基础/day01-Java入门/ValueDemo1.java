@@ -25,8 +25,7 @@ public class ValueDemo1 {
         // 浮点类型
         float f = 3.14F;
         double d = 3.14;
-        System.out.println(f);
-        System.out.println(d);
+        printElements(f, d);
 
         // float
         // 32位（4字节）存储
