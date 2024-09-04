@@ -58,5 +58,13 @@ public class Demo1 {
         BigDecimal num2 = new BigDecimal("1.01");
         System.out.println(num1.add(num2)); // 2.11
 
+        // 分隔符
+        System.out.println("----------");
+
+        // 只有整数参与计算, 结果只能是整数
+        System.out.println(10 / 3); // 3
+        System.out.println(10.5 % 3); // 1.5
+
+        // 如果有小数参与计算, 结果可能丢失精度
     }
 }
