@@ -14,6 +14,21 @@ public class Test1 {
         }
         // 3. 接收用户输入的4位数
         int num = sc.nextInt();
+        Test1.handle1(num);
+    }
+
+    public static void handle1(int num) {
+        // 转成字符串, 然后拆分成字符
+        String str = String.valueOf(num);
+        char[] chars = str.toCharArray();
+        // 5. 打印结果
+        System.out.println("个位：" + chars[3]);
+        System.out.println("十位：" + chars[2]);
+        System.out.println("百位：" + chars[1]);
+        System.out.println("千位：" + chars[0]);
+    }
+
+    public static void handle(int num) {
         // 4. 拆分4位数
         int ge = num % 10;
         int ten = num / 10 % 10;
