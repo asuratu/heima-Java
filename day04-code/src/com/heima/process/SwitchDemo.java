@@ -42,7 +42,7 @@ public class SwitchDemo {
 //                break;
 //        }
 
-        // 优化
+        // jdk 14 开始支持 增强的 switch 表达式
         switch (num) {
             case 1 -> {
                 System.out.println("一周开始了");
