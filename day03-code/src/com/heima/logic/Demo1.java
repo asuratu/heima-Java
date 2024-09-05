@@ -25,6 +25,10 @@ public class Demo1 {
 //        System.out.println(false ^ true); // true
 //        System.out.println(false ^ false); // false
 
+        boolean a = true;
+        boolean b = true;
+        System.out.println(a != b);
+
         System.out.println("----------------------------");
 
         // ! 非 (取反)
