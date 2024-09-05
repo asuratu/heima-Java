@@ -15,6 +15,7 @@ public class Test2 {
         System.out.println(max);
 
         Test2.bubbleSort(new int[]{3, 2, 1, 5, 4});
+        Test2.findMaxNumber(new int[]{3, 2, 11, 5, 4});
     }
 
     // 冒泡排序
@@ -31,6 +32,16 @@ public class Test2 {
             }
         }
         System.out.println(Arrays.toString(arr));
+    }
+
+    public static void findMaxNumber(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
     }
 
 }
