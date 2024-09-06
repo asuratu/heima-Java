@@ -13,7 +13,7 @@ public class Student {
     public Student(String id, String name, int age) {
         this.id = id;
         this.name = name;
-        this.age = age;
+        setAge(age);
     }
 
     public String getId() {
@@ -37,6 +37,11 @@ public class Student {
     }
 
     public void setAge(int age) {
+        // 校验年龄是否合法
+        if (age < 0 || age > 150) {
+            System.out.println("年龄不合法");
+            return;
+        }
         this.age = age;
     }
 }

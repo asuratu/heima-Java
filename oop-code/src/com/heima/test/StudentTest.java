@@ -12,7 +12,7 @@ public class StudentTest {
     public static void main(String[] args) {
         // 1. 定义一个长度为3的数组，数组存储1~3名学生对象作为初始数据，学生对象的学号，姓名各不相同。
         Student[] students = new Student[3];
-        students[0] = new Student("heima001", "张三", 18);
+        students[0] = new Student("heima001", "张三", 188);
         students[1] = new Student("heima002", "李四", 19);
         students[2] = new Student("heima003", "王五", 20);
 
