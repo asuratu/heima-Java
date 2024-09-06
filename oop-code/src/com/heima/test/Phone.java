@@ -2,11 +2,11 @@ package com.heima.test;
 
 // javabean 类, 用来描述事物的类
 public class Phone {
-    // 属性
+    // 属性, 一般都是名词
     String brand;
-    int price;
+    double price;
 
-    // 方法
+    // 方法, 一般都是动词
     public void call(String name) {
         System.out.println("给" + name + "打电话");
     }

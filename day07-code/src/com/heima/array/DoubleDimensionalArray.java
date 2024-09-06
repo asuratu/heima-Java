@@ -5,7 +5,11 @@ import java.util.Arrays;
 public class DoubleDimensionalArray {
     public static void main(String[] args) {
         // 1. 定义一个二维数组
-        int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int[][] arr = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
 
         // 2. 遍历二维数组
         for (int[] ints : arr) {

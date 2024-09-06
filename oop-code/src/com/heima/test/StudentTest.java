@@ -43,6 +43,13 @@ public class StudentTest {
 
         // 7. 遍历所有学生信息。
         printStudent(students);
+
+        // 分割线
+        System.out.println("====================================");
+
+        addAge(students, "heima001");
+
+        printStudent(students);
     }
 
     private static void updateStudent(Student[] students, String id) {
@@ -129,5 +136,23 @@ public class StudentTest {
             }
         }
         return false;
+    }
+
+    private static int search(Student[] students, String id) {
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].getId().equals(id)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private static void addAge(Student[] students, String id) {
+        int i = search(students, id);
+        if (i == -1) {
+            System.out.println("学号不存在");
+            return;
+        }
+        students[i].setAge(students[i].getAge() + 1);
     }
 }
