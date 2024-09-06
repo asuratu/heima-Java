@@ -11,7 +11,7 @@ public class MethodTest4 {
         // 将新数组返回。
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] newArr = copyOfRange(arr, 2, 15);
+        int[] newArr = copyOfRange(arr, 2, 100);
         System.out.println("newArr = " + Arrays.toString(newArr));
     }
 

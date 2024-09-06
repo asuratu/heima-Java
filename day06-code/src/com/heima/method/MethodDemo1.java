@@ -35,6 +35,10 @@ public class MethodDemo1 {
         // 3. 赋值调用
         // 数据类型 变量名 = 方法名(参数列表);
 
+        int sum = getSum(10, 20);
+        System.out.println(sum);
+
+
         // 调用方法
         System.out.println(getSum(10, 20));
 
