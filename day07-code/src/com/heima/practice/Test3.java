@@ -1,5 +1,9 @@
 package com.heima.practice;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Test3 {
     public static void main(String[] args) {
         // 需求：
@@ -25,9 +29,32 @@ public class Test3 {
         }
         // 5. 随机产生一个数字
         int num = (int) (Math.random() * 10);
+
+        checkCode.append(num);
+
         // 6. 返回结果
-        return checkCode.toString() + num;
+        return shuffleString(checkCode.toString());
     }
+
+    public static String shuffleString(String input) {
+        // 将字符串转换为字符列表
+        List<Character> characters = new ArrayList<>();
+        for (char c : input.toCharArray()) {
+            characters.add(c);
+        }
+
+        // 打乱字符列表
+        Collections.shuffle(characters);
+
+        // 将打乱后的字符列表转换回字符串
+        StringBuilder result = new StringBuilder(characters.size());
+        for (char c : characters) {
+            result.append(c);
+        }
+
+        return result.toString();
+    }
+
 
     // 定义方法, 用来随机产生一个字符
     public static char getRandomChar() {

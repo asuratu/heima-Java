@@ -22,6 +22,5 @@ public class DoubleDimensionalArray {
         arr1[2] = new int[4];
         System.out.println(Arrays.deepToString(arr1));
 
-
     }
 }
