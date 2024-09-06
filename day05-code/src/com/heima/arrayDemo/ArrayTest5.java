@@ -10,7 +10,7 @@ public class ArrayTest5 {
         // 3）统计有多少个数据比平均值小
 
         // 1. 定义一个数组
-        int[] arr = new int[10];
+        int[] arr = new int[10]; // 10个元素的数组
         // 2. 生成随机数
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100 + 1);

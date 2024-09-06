@@ -30,5 +30,23 @@ public class ArrayDemo {
         int[] arr4 = new int[3];
         arr4[0] = 1;
         System.out.println(Arrays.toString(arr4));
+
+        System.out.println(arr4); // [I@7b23ec81 是数组的内存地址, 不同数组的内存地址不同
+
+        // 扩展:
+        // 解释一下地址值的格式含义: [I@7b23ec81
+        // 1. [I 表示这是一个 int 类型的数组。在Java中，[I的含义是“一个整数类型的数组”
+        // 1.1 [ 表示这是一个数组类型。
+        // 1.2 I 表示数组中元素的类型。
+        //  •	Z 表示 boolean
+        //	•	B 表示 byte
+        //	•	C 表示 char
+        //	•	D 表示 double
+        //	•	F 表示 float
+        //	•	J 表示 long
+        //	•	S 表示 short
+        //	•	L<className>; 表示一个类类型的对象。
+
+        // 2. @7b23ec81 是对象的哈希码（hash code），这是由 Object 类的 hashCode() 方法生成的。这个哈希码通常是基于对象的内存地址计算的一个整数，并被转换成十六进制表示。
     }
 }
