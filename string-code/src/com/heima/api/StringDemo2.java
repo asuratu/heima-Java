@@ -1,5 +1,8 @@
 package com.heima.api;
 
+/**
+ * @author asura
+ */
 public class StringDemo2 {
     public static void main(String[] args) {
         // 1. 直接赋值
@@ -10,7 +13,7 @@ public class StringDemo2 {
         String s2 = new String(chs);
 
         // 比较两个字符串是否相等
-        System.out.println(s1 == s2); // false
+        System.out.println(s1.equals(s2));
 
         // 使用 == 比较
         // 基础数据类型, 比较的是值

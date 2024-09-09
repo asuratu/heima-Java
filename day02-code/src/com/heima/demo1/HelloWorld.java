@@ -1,6 +1,8 @@
 package com.heima.demo1;
 
-// 定义一个公共类 HelloWorld
+/**
+ * @author asura
+ */ // 定义一个公共类 HelloWorld
 public class HelloWorld {
     // 定义一个公共的静态 main 方法，这是程序的入口点
     public static void main(String[] args) {
