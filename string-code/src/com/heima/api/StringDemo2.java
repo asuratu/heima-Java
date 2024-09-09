@@ -20,10 +20,10 @@ public class StringDemo2 {
         // 引用数据类型, 比较的是地址值
 
         // 使用 equals 比较
-        System.out.println(s1.equals(s2)); // true
+        System.out.println(s1.equals(s2));
 
         // 不区分大小写比较
-        System.out.println(s3.equalsIgnoreCase(s2)); // true
+        System.out.println(s3.equalsIgnoreCase(s2));
 
 
     }
