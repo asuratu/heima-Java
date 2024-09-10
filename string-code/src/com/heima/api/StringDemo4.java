@@ -1,5 +1,8 @@
 package com.heima.api;
 
+/**
+ * @author asura
+ */
 public class StringDemo4 {
     public static void main(String[] args) {
         // 遍历字符串
