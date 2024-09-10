@@ -2,6 +2,9 @@ package com.heima.api;
 
 import java.util.ArrayList;
 
+/**
+ * @author asura
+ */
 public class ArrayListDemo1 {
     public static void main(String[] args) {
         // 1. 创建集合的容器
@@ -15,16 +18,20 @@ public class ArrayListDemo1 {
         // 打印对象不是地址值, 而是对象中的元素 []
 
         // 2. 添加元素
-        list.add("hello"); // 会返回一个 boolean 值, 表示是否添加成功
+        // 会返回一个 boolean 值, 表示是否添加成功
+        list.add("hello");
         list.add("world");
         System.out.println(list);
 
         // 3. 获取元素
-        String s = list.get(0); // 会返回被获取的元素
+        // 会返回被获取的元素
+//        String s = list.get(0);
+        String s = list.getFirst();
         System.out.println(s);
 
         // 4. 获取集合的长度
-        int size = list.size(); // 会返回集合的长度
+        // 会返回集合的长度
+        int size = list.size();
         System.out.println(size);
 
         // 5. 遍历集合
@@ -33,11 +40,14 @@ public class ArrayListDemo1 {
         }
 
         // 6. 删除元素
-        list.remove(0); // 会返回被删除的元素
+        // 会返回被删除的元素
+//        list.remove(0);
+        list.removeFirst();
         System.out.println(list);
 
         // 7. 修改元素
-        list.set(0, "java"); // 会返回被修改的元素
+        // 会返回被修改的元素
+        list.set(0, "java");
         System.out.println(list);
 
         // 8. 清空集合
@@ -45,7 +55,8 @@ public class ArrayListDemo1 {
         System.out.println(list);
 
         // 9. 判断集合是否为空
-        boolean empty = list.isEmpty(); // 会返回一个 boolean 值, 表示集合是否为空
+        // 会返回一个 boolean 值, 表示集合是否为空
+        boolean empty = list.isEmpty();
         System.out.println(empty);
 
         // 10. 判断集合中是否包含某个元素
