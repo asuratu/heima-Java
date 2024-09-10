@@ -2,6 +2,9 @@ package com.heima.api;
 
 import java.util.Scanner;
 
+/**
+ * @author asura
+ */
 public class StringDemo12 {
     public static void main(String[] args) {
         // 已知正确的用户名密码, 验证用户名密码是否正确, 总共3次机会
