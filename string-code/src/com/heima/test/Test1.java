@@ -1,5 +1,8 @@
 package com.heima.test;
 
+/**
+ * @author asura
+ */
 public class Test1 {
     public static void main(String[] args) {
         // 阿拉伯数字转换为罗马数字
@@ -10,6 +13,11 @@ public class Test1 {
     }
 
     private static String toRoman(String s) {
+        // 只能是数字
+        if (!s.matches("\\d+")) {
+            return "输入有误";
+        }
+
         // 1. 定义一个字符串, 用来存储罗马数字
         StringBuilder sb = new StringBuilder();
         // 定义一个数组
