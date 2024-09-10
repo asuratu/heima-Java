@@ -30,7 +30,7 @@ public class Test7 {
         ArrayList<Phone> list1 = getPhone(list);
 
         for (Phone p : list1) {
-            System.out.println("品牌：" + p.getBrand() + "，价格：" + p.getPrice());
+            System.out.println(p);
         }
     }
 

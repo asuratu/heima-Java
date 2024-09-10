@@ -2,6 +2,9 @@ package com.heima.test;
 
 import java.util.ArrayList;
 
+/**
+ * @author asura
+ */
 public class Test1 {
     public static void main(String[] args) {
         // 需求：定义一个集合，添加字符串，并进行遍历

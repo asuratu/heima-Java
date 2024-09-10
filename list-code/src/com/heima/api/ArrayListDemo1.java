@@ -20,6 +20,7 @@ public class ArrayListDemo1 {
         // 2. 添加元素
         // 会返回一个 boolean 值, 表示是否添加成功
         list.add("hello");
+        list.add("hello");
         list.add("world");
         System.out.println(list);
 
@@ -40,10 +41,17 @@ public class ArrayListDemo1 {
         }
 
         // 6. 删除元素
+        System.out.println("删除元素1");
         // 会返回被删除的元素
-//        list.remove(0);
+//        String r = list.remove(0);
+        System.out.println(list);
+
+//        Boolean b = list.remove("hello");
+        // 删除全部的值为 hello 的元素
+//        list.removeIf("hello"::equals);
         list.removeFirst();
         System.out.println(list);
+        System.out.println("删除元素2");
 
         // 7. 修改元素
         // 会返回被修改的元素

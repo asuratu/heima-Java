@@ -23,7 +23,7 @@ public class Test3 {
 
         // 3. 遍历集合
         for (Student s : list) {
-            System.out.println("姓名：" + s.getName() + ", 年龄：" + s.getAge());
+            System.out.println(s);
         }
     }
 
