@@ -31,6 +31,8 @@ public class Test {
         // 利用有参构造创建对象
         Zi z2 = new Zi("张三", 23);
 
+        System.out.println(z2);
+
     }
 }
 
@@ -44,6 +46,14 @@ class Fu {
     public Fu(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
 
