@@ -10,6 +10,10 @@ public class Fu {
     String name;
     int age;
 
+    public Fu() {
+        System.out.println("父类构造方法");
+    }
+
     public Fu(String name, int age) {
         this.name = name;
         this.age = age;
