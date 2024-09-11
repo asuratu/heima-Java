@@ -75,7 +75,7 @@ public class StudentSystem {
     }
 
     private static void printStudentList(ArrayList<Student> list) {
-        if (list.size() == 0) {
+        if (list.isEmpty()) {
             System.out.println("无学生信息");
             return;
         }

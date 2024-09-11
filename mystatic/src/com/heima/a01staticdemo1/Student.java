@@ -8,10 +8,11 @@ package com.heima.a01staticdemo1;
  * @Version 1.0.0
  */
 public class Student {
+    public static String teacherName;
     // static 修饰的成员变量, 静态变量, 所有的对象共享一份数据
     // 一般用来存储对象的共性数据
     // 还可以使用 类名.静态变量 的方式访问 Student.teacherName
-    public static String teacherName; // 静态变量, 推荐使用 类名.静态变量 的方式访问
+    // 静态变量, 推荐使用 类名.静态变量 的方式访问
     private String name;
     private String age;
     private String gender;
