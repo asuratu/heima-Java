@@ -30,9 +30,9 @@ public class Manager extends Employee {
     public String toString() {
         return "{" +
                 "bonus=" + bonus +
-                ", id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", salary=" + salary +
+                ", id='" + this.getId() + '\'' +
+                ", name='" + this.getName() + '\'' +
+                ", salary=" + this.getSalary() +
                 '}';
     }
 }
