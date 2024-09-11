@@ -17,11 +17,21 @@ public class Test3 {
 class Fu2 {
     String name = "Fu1";
     String hobby = "reading";
+
+    public void dance() {
+        System.out.println("Fu2 show");
+    }
 }
 
 class Zi2 extends Fu2 {
     String name = "Zi1";
     String game = "swimming";
+
+
+    @Override
+    public void dance() {
+        System.out.println("Zi2 show");
+    }
 
     public void show() {
         // 打印 Fu2 的 name
@@ -33,5 +43,9 @@ class Zi2 extends Fu2 {
         System.out.println(super.hobby);
         // 打印 Zi2 的 game
         System.out.println(this.game);
+        // 调用 Fu2 的方法
+        super.dance();
+        // 调用 Zi2 的方法
+        this.dance();
     }
 }
