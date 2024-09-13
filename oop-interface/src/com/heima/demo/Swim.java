@@ -9,7 +9,7 @@ public interface Swim {
     // 1.1 只能是常量
     // 1.2 默认修饰符: public static final
     int A = 10;
-    
+        
     // 2. 没有构造方法
 
     // 3.成员方法：
