@@ -11,7 +11,7 @@ public class Test {
     public static void main(String[] args) {
         BasketballCoach bc = new BasketballCoach("张三", 30);
         System.out.println("篮球教练, 姓名: " + bc.getName() + ", 年龄: " + bc.getAge());
-        bc.Teach();
+        bc.teach();
 
         System.out.println("----------");
 
@@ -23,7 +23,7 @@ public class Test {
 
         TableTennisCoach tc = new TableTennisCoach("王五", 40);
         System.out.println("乒乓球教练, 姓名: " + tc.getName() + ", 年龄: " + tc.getAge());
-        tc.Teach();
+        tc.teach();
         tc.speakEnglish();
 
         System.out.println("----------");

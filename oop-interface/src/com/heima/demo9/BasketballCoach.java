@@ -1,11 +1,10 @@
-package com.heima.demo3;
+package com.heima.demo9;
 
 /**
  * @ClassName BasketballCoach
- * @Description com.heima.demo3.BasketballCoach
+ * @Description 篮球教练
  * @Author AsuraTu
- * @Date 2023/4/20 16:16
- * @Version 1.0.0
+ * @Date 2024/9/14
  */
 public class BasketballCoach extends Coach {
     public BasketballCoach() {

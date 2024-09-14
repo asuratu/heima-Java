@@ -1,11 +1,10 @@
-package com.heima.demo3;
+package com.heima.demo9;
 
 /**
- * @ClassName Athlete
- * @Description com.heima.demo3.Athlete
+ * @ClassName Coach
+ * @Description 教练类
  * @Author AsuraTu
- * @Date 2023/4/20 16:03
- * @Version 1.0.0
+ * @Date 2024/9/14
  */
 public abstract class Coach extends Person {
     public Coach() {

@@ -1,13 +1,12 @@
-package com.heima.demo3;
+package com.heima.demo9;
 
 /**
  * @ClassName TableTennisCoach
- * @Description com.heima.demo3.TableTennisCoach
+ * @Description 乒乓球教练
  * @Author AsuraTu
- * @Date 2023/4/20 16:15
- * @Version 1.0.0
+ * @Date 2024/9/14
  */
-public class TableTennisCoach extends Coach implements SpeakEnglish {
+public class TableTennisCoach extends Coach implements Speak {
     public TableTennisCoach() {
     }
 
@@ -17,11 +16,11 @@ public class TableTennisCoach extends Coach implements SpeakEnglish {
 
     @Override
     public void teach() {
-        System.out.println("教打乒乓球");
+        System.out.println("教打乒乓球！");
     }
 
     @Override
     public void speakEnglish() {
-        System.out.println("说英语");
+        System.out.println("说英语!");
     }
 }
