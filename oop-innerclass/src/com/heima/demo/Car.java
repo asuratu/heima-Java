@@ -9,8 +9,8 @@ package com.heima.demo;
  */
 public class Car {
     private final int age;
-    String brand;
-    String color;
+    private final String brand;
+    private final String color;
     Engine engine;
 
     public Car(String brand, String color, int age) {
@@ -20,10 +20,19 @@ public class Car {
     }
 
     public void show() {
+        // 判断发动机是否为空
+        if (engine == null) {
+            System.out.println("发动机为空");
+            return;
+        }
         System.out.println(engine.brand);
         System.out.println(engine.useAge);
         engine.run();
-        System.out.println("汽车在跑");
+        System.out.println(this.getBrand() + "的汽车在跑");
+    }
+
+    public String getBrand() {
+        return brand;
     }
 
     class Engine {

@@ -14,6 +14,11 @@ public class Test extends InterAdapter {
     }
 
     @Override
+    public void method5() {
+        System.out.println("Test 重写了 method5 方法");
+    }
+
+    @Override
     void method6() {
         System.out.println("Test 重写了 method6 方法");
     }

@@ -17,6 +17,8 @@ public class Test {
 
         Car c = new Car("奔驰", "黑色", 3);
         c.engine = c.new Engine("奔驰发动机", 3);
+        Car.Engine p = c.new Engine("奔驰发动机", 3);
         c.show();
+        System.out.println(c.engine.brand);
     }
 }

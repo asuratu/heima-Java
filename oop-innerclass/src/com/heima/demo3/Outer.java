@@ -21,5 +21,7 @@ class Outer {
             System.out.println(a); // 30
             System.out.println(aa); // 100
         }
+
+
     }
 }
