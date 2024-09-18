@@ -28,18 +28,29 @@ public class A01_ListDemo1 {
         list.add("张三");
         list.add("李四");
         list.add("王五");
-        list.add(2, "赵六"); // 会将指定索引及其以后的元素向后移动一位
+        // 会将指定索引及其以后的元素向后移动一位
+        list.add(2, "赵六");
+        System.out.println(list);
+
+        System.out.println("-----------");
 
         // 3. 删除元素
-        list.remove(1); // 删除指定索引的元素, 返回的是被删除的元素
+        // 删除指定索引的元素, 返回的是被删除的元素
+        list.remove(1);
+        System.out.println(list);
+        System.out.println("-----------");
 
         // 4. 修改元素
-        String before = list.set(1, "田七");// 修改指定索引的元素, 返回值的更新前的元素
+        // 修改指定索引的元素, 返回值的更新前的元素
+        String before = list.set(1, "田七");
         System.out.println("before = " + before);
+        System.out.println("-----------");
 
         // 5. 获取元素
-        String s = list.get(1); // 获取指定索引的元素
+        // 获取指定索引的元素
+        String s = list.get(1);
         System.out.println("s = " + s);
+        System.out.println("-----------");
 
         System.out.println(list);
     }
