@@ -54,6 +54,7 @@ public class A01_ListDemo3 {
 
         // 3. 增强for循环
         for (String s : list) {
+            // 这里的 s 只是一个局部变量, 不能修改元素的值
             System.out.println("s = " + s);
         }
 

@@ -36,7 +36,7 @@ public class A01_ListDemo2 {
         System.out.println(list);
 
         // 手动装箱
-//        Integer i = 1;
+        Integer i = 1;
 //        list.remove(i);
         // 也可以使用removeIf方法删除元素
         list.removeIf(x -> x == 1);
