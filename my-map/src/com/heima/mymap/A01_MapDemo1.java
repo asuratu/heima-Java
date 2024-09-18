@@ -98,7 +98,8 @@ public class A01_MapDemo1 {
 
         // 10. 根据键获取值
         System.out.println(map.get("张三"));
-        System.out.println(map.get("赵六")); // 如果集合中没有这个键, 返回 null
+        // 如果集合中没有这个键, 返回 null
+        System.out.println(map.get("赵六"));
 
         System.out.println("--------");
 

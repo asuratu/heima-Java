@@ -35,6 +35,12 @@ public class Student implements Comparable<Student> {
         this.age = age;
     }
 
+    // 重写hashCode方法
+    @Override
+    public int hashCode() {
+        return name.hashCode() + age;
+    }
+
     // 重写equals方法
     @Override
     public boolean equals(Object obj) {
@@ -56,12 +62,6 @@ public class Student implements Comparable<Student> {
         return this.name.equals(stu.name) && this.age == stu.age;
     }
 
-    // 重写hashCode方法
-    @Override
-    public int hashCode() {
-        return name.hashCode() + age;
-    }
-
     // 重写toString方法
     @Override
     public String toString() {
@@ -78,7 +78,8 @@ public class Student implements Comparable<Student> {
         // 0: 认为元素重复了, 不存储
 
         // 按照年龄降序排序
-        int num = o.age - this.age; // 正数降序, 负数升序
+        int num = o.age - this.age;
+        // 正数降序, 负数升序
         // 如果年龄相同，按照姓名降序排序
         return num == 0 ? o.name.compareTo(this.name) : num;
     }

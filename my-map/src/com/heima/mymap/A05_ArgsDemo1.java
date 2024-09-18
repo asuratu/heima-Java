@@ -18,7 +18,10 @@ public class A05_ArgsDemo1 {
         // 2. 如果方法的参数有多个，那么可变参数必须写在参数列表的末尾
 
         // 定义一个方法，计算 n 个int类型数据的和
-        int r = sum(1, 2, 3, 4, 5);
+        // 定义一个数组
+        int[] arr = {1, 2, 3, 4, 5};
+//        int r = sum(1, 2, 3, 4, 5);
+        int r = sum(arr);
         System.out.println(r);
 
         int r2 = sum();
