@@ -3,6 +3,7 @@ package com.heima.mycollection;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.function.Consumer;
 
 /**
  * @ClassName A03_CollectionDemo1
@@ -41,7 +42,7 @@ public class A03_CollectionDemo1 {
             // 因为在获取迭代器的时候, 迭代器会记录集合的长度, 在遍历的过程中, 会使用集合的方法修改集合的长度, 导致迭代器记录的长度和实际集合的长度不一致, 就会发生并发修改异常
             // coll.add("赵六"); //  java.util.ConcurrentModificationException
             // 注意点: 所以在遍历的过程中, 可以使用迭代器的方法来删除元素
-            if ("李四".equals(s)) {
+            if ("王五".equals(s)) {
                 iterator.remove();
                 continue;
             }
@@ -63,10 +64,21 @@ public class A03_CollectionDemo1 {
         // idea 快速生成方式  coll.for
         // 注意点: 增强for循环底层使用的也是迭代器, 所以在遍历的过程中, 不能使用集合的方法操作集合的长度, 否则会发生并发修改异常
         for (String s : coll) {
+            // 这里的 s 是局部变量, 不能修改集合中的元素
+            s = s + "22";
             System.out.println(s);
         }
 
         System.out.println("--------");
+
+        // 匿名内部类
+        coll.forEach(new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                s = s + "33";
+                System.out.println(s);
+            }
+        });
 
         // 4. lambda表达式
         // lambda表达式也可以用来遍历集合
