@@ -28,7 +28,8 @@ public class A05_GenericsDemo5 {
 
         method(list1);
         // public static void method(ArrayList<Ye> list) {
-        // method(list2); // 报错, 因为泛型不具备继承性
+        // 报错, 因为泛型不具备继承性
+        method(list2);
         // method(list3);
 
         // 数据具备继承性

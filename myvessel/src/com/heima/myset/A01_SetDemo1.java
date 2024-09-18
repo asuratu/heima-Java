@@ -22,7 +22,8 @@ public class A01_SetDemo1 {
         set.add("hello");
         set.add("world");
         set.add("java");
-        set.add("java"); // 如果添加的元素重复, 返回 false, 不会添加到集合中
+        // 如果添加的元素重复, 返回 false, 不会添加到集合中
+        set.add("java");
 
         System.out.println(set);
 
