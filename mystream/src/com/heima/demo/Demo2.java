@@ -39,6 +39,7 @@ public class Demo2 {
         Integer[] arr = {1, 2, 3, 4, 5};
         Arrays.stream(arr).filter(num -> num > 3).forEach(System.out::println);
         // 等价于
+        // arr 必须是引用数据类型, 基本数据类型不会自动装箱
         Stream.of(arr).filter(num -> num > 3).forEach(System.out::println);
 
         System.out.println("============");
